@@ -1,0 +1,123 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 2rem;
+  background: #f8f9fa;
+  color: #333;
+}
+
+h1 {
+  font-size: 2.8rem;
+  color: #222;
+  margin-bottom: 1.5rem;
+}
+
+#playerSection, #gameControls {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  display: inline-block; /* For better centering with multiple blocks */
+}
+
+#playerSection button, #gameControls button {
+  margin: 0.5rem;
+  padding: 0.6rem 1.2rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  transition: background-color 0.2s ease;
+}
+
+#playerSection button:hover, #gameControls button:hover {
+  background-color: #0056b3;
+}
+
+#playerSection button:disabled, #gameControls button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+#price {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: #555;
+}
+
+#multiplier {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: #28a745; /* Green for increasing */
+}
+
+.crash {
+  color: red;
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+#betAmount, #betCurrency {
+  padding: 0.5rem;
+  font-size: 1rem;
+  margin: 0 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#balance, #roundInfo {
+  font-size: 1rem;
+  margin-top: 1rem;
+  padding: 0.8rem;
+  background: #e9ecef;
+  border-radius: 5px;
+  line-height: 1.5;
+  text-align: left;
+  display: inline-block;
+  min-width: 300px;
+}
+
+#notifications {
+  margin-top: 2rem;
+  max-height: 200px;
+  overflow-y: auto;
+  border-top: 1px solid #eee;
+  padding-top: 1rem;
+}
+
+#notifications p {
+  padding: 0.5rem;
+  margin: 0.3rem 0;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  text-align: left;
+}
+
+#notifications p.info {
+  background-color: #e2f0fb;
+  color: #0056b3;
+}
+
+#notifications p.success {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+#notifications p.error {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+#notifications p.warning {
+    background-color: #fff3cd;
+    color: #856404;
+}
